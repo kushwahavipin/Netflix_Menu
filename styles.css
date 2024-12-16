@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./images.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bmenu-icon {
+    width: 34px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    align-items: end;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .bmenu-icon .bbar {
+    width: 90%;
+    height: 6px;
+    margin-top: 2px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+  }
+  .navTransD {
+    transform: translateX(-310px);
+    transition: all 1s ease-in-out;
+  }
+  .navTransRD {
+    transform: translateX(-310px);
+    transition: all 1.5s ease-in-out;
+  }
+  .navTransBD {
+    transform: translateX(-310px);
+    transition: all 2s ease-in-out;
+  }
+  .navTrans {
+    transform: translateX(0px);
+    transition: all 2s ease-in-out;
+  }
+  .navTransR {
+    transform: translateX(0px);
+    transition: all 1.5s ease-in-out;
+  }
+  .navTransB {
+    transform: translateX(0px);
+    transition: all 1s ease-in-out;
+  }
+  .bred {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22%;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+  }
+  .bblack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24%;
+    height: 100%;
+    background-color: black;
+    z-index: -2;
+  }
+  .menu-icon {
+    width: 34px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    align-items: end;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .menu-icon .bar {
+    width: 90%;
+    height: 6px;
+    margin-top: 2px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  #bar-1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 8px;
+  }
+  #bar-2 {
+    opacity: 0;
+  }
+  #bar-3 {
+    transform: rotate(45deg);
+  }
+  .logo {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .logo img {
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+  }
+  ul > li {
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+    padding-left: 50px;
+  }
+  
+  li:hover {
+    border-top: 2px solid red;
+    border-bottom: 1px solid red;
+  }

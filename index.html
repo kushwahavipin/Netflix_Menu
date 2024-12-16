@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Nteflix Mobile</title>
+  </head>
+  <body>
+    <div class="bmenu-icon">
+      <div class="bbar" id="bbar-1"></div>
+      <div class="bbar" id="bbar-2"></div>
+      <div class="bbar" id="bbar-3"></div>
+    </div>
+    <div class="bred navTransRD"></div>
+    <div class="bblack navTransBD"></div>
+    <nav class="navTransD">
+      <div class="menu-icon">
+        <div class="bar" id="bar-1"></div>
+        <div class="bar" id="bar-2"></div>
+        <div class="bar" id="bar-3"></div>
+      </div>
+
+      <div class="logo"><img src="./Netflix-Logo.png" alt="netflix" /></div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+        <li>Movies</li>
+      </ul>
+    </nav>
+    <script>
+    const navbar = document.querySelector(".bmenu-icon");
+        const navbarD = document.querySelector("nav");
+        const navbarcolapse = document.querySelector(".menu-icon");
+        const bred = document.querySelector(".bred");
+        const bblack = document.querySelector(".bblack");
+        
+        navbar.addEventListener("click", nav_display);
+        navbarcolapse.addEventListener("click", navColapse);
+        
+        function nav_display() {
+          navbarD.classList.add("navTrans");
+          bred.classList.add("navTransR");
+          bblack.classList.add("navTransB");
+        }
+        function navColapse() {
+          navbarD.classList.remove("navTrans");
+          bred.classList.remove("navTransR");
+          bblack.classList.remove("navTransB");
+        }
+        </script>
+  </body>
+</html>
